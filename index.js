@@ -12,6 +12,13 @@ const addBadge = function () {
   return summerCards
 }
 
+const deleteAll = function () {
+  let allCards = document.querySelectorAll("div .card")
+  for (i=0; i<allCards.length; i++){
+  allCards[i].remove()
+  }
+}
+
 window.onload = function () {
   travelsCount();
   addBadge();
